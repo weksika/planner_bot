@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@telegram-apps/sdk'],
+      external: ['@telegram-apps/sdk'], // Исключаем модуль из автоматической обработки
     },
   },
 })
